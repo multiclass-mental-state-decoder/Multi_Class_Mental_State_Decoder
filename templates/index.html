@@ -1,0 +1,205 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center">
+								<h3 class="text-wh">Multi-Class Mental State Decoder</h3>
+								<h4 class="text-wh mx-auto my-4"><b>Get informed decisions about the emotion behind the text.</b></h4>
+								<br>
+								<h4 class="text-wh mx-auto my-4"><strong> Here are some questions we'll answer</strong></h4>
+								<p class="text-li mx-auto mt-2">
+									1. What is Sentiment Analysis<br>
+									2. What is the Sentiment of the Speaker/Writer?<br>
+									3. Comparative study of various ML & DL algorithms.<br>
+									4. Importance of Sentiment Analysis<br>
+									5. What is Bert?<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- core values -->
+<section class="core-value py-5 bg-warning">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/core.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Detecting Sentiment, Improving Lives, Helping developers decide which algorithm to choose.</h3>
+				<p class="text-dark">We use state-of-the-art machine learning and deep learning technologies to help you
+					guide through
+					the entire sentiment detection process. Make informed decisions to understand the sentiment of your clients,
+					understand the
+					importance of sentiment analysis and create your own model based on the best algorithms.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="core-value py-5">
+	<div class="container py-md-4 ">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Trivia</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/nlp.gif') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">What is Sentiment Analysis and NLP?</h3>
+				<p class="mt-3">Natural Language Processing (NLP) is a sub-domain of Artificial Intelligence (AI) that includes many different 
+					techniques for interpreting human language, ranging from statistical 
+					and machine learning methods to rules-based and algorithmic approaches. 
+				</p>
+				<p class="mt-3">Sentiment Analysis or Opinion Mining mixes NLP with Machine Learning (ML) and Statistics for 
+					extensive exploration of data stored on the internet to identify and categorize the views expressed in a part of the text.  
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center">Importance of Sentiment Analysis</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/nlp.jpg') }}" class="img-fluid" alt="" />
+				<img src="{{ url_for('static', filename='images/imp.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Possible Use Cases</h3>
+				<p class="mt-3">People nowadays use the social media platforms to speak about their experience with certain products/services. 
+					The overall sentiment of the customer, whether they are giving 
+					good/bad reviews or facing any problems can be analysed, thus helping the company to improve upor customer satisfaction.<br>
+				</p>
+				<p class="mt-3">There has been an increase in the number of fatalities due to various mental disorders among individuals. 
+					Their mental ill being can be predicted if their emotions are analysed beforehand and can be helped 
+					before taking any grave step. <br>
+				</p>
+				<p class="mt-3">We can also imagine AI based personal psychologists who would fit into our pockets, giving us real time analysis of 
+					our sentiments, so that we can help ourselves or seek help from professionals. We believe that this technology would be of great 
+					benefit to the health sector.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="core-value py-5 bg-primary">
+	<div class="p-3 mb-2 bg-secondary text-white bg-primary">
+	<div class="container py-md-4 ">
+		<h3 class="heading mb-sm-5 mb-4 text-center text-white">Analyse the Sentiment</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/imp.gif') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="text-white">Get a live demo of the emotion or sentiment behind any text.</h3>
+				<form method="POST" class="text-dark font-weight-​bold">
+					<input type="text" placeholder="Enter valid text here" name="text" class="text-white bg-dark font-weight-​bold" 
+					 minlength="3" title="Please enter a valid sentence!" required>
+					<input type="submit" class="mt-2">
+				</form>
+				<p class="text-white">{{answer}}</p>
+				<p class="text-white">
+					<br>
+					Joy - The person is in a good state of mind &#128516 <br>
+					Anger - The person is in a bad state of mind &#128544 <br>
+					Neutral - The person is feeling nothing in particular &#128528 <br>
+					Sadness - The person is disappointed with something &#128546 <br>
+					Fear - The person is afraid and disturbed &#128552  
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center">Introduction to Bert</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/bert.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">What is Bert? Google's solution to NLP!</h3>
+				<p class="text-dark">BERT stands for Bidirectional Encoder Representations from Transformers. It is designed to pre-train deep 
+					bidirectional representations from unlabeled text by jointly conditioning on both left and right context. As a result, the 
+					pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide 
+					range of NLP tasks.<br><br>
+				</p>
+				<p class="text-dark">
+					In 2018, Google introduced and open-sourced BERT. In its research stages, the framework achieved groundbreaking results 
+					in 11 natural language understanding tasks, including sentiment analysis, semantic role labeling, sentence classification and
+					the disambiguation of polysemous words, or words with multiple meanings.
+				</p>
+				<a href="https://github.com/google-research/bert">Explore more about Bert</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="blog py-5 bg-primary">
+	<div class="container py-md-5 bg-primary">
+		<h3 class="heading mb-sm-5 mb-4 text-center text-white">Find Out More</h3>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />
+				<a href="https://colab.research.google.com/drive/1sAF4I9HRKfXMKFBeLAzFGPsCoZirGXjw?usp=sharing">
+					<div class="blog-info">
+						<h4>Compare ML Algorithms</h4>
+						<p class="mt-2">Compare the best ML algorithms, 
+							all in one collab.
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="">
+				<a href="https://colab.research.google.com/drive/1DKGbY91YJ-gkR_zPi1ll3xsQcTwz2ZNf?usp=sharing">
+					<div class="blog-info">
+						<h4>Compare DL Algorithms</h4>
+						<p class="mt-2">Compare the best DL algorithms, 
+							all in one collab.
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="" />
+				<a href="https://colab.research.google.com/drive/1K2XHoRHnL9fwaE7p4hROwaGpgUR45Yfh?usp=sharing">
+					<div class="blog-info">
+						<h4>Try out Google's Bert</h4>
+						<p class="mt-2">Find out Bert's performance in a collab notebook.</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+</html>
+
+{% endblock %}
